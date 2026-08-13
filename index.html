@@ -624,6 +624,22 @@
                 padding: 0 15px;
             }
         }
+        * 🗺️ تنسيق الخريطة لكي لا تخرج من الصندوق */
+.map-container {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 160px; /* تحديد ارتفاع مناسب للخريطة */
+    display: block;
+    border: none;
+}
+
     </style>
 </head>
 
@@ -884,6 +900,13 @@
                 <li><a href="#">Legal</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+            <!-- الخريطة -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26589.98703489983!2d-7.653372510255199!3d33.58588179347829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d30010aefb67%3A0x2d895313adb95273!2sCasa%20del%20Gusto%20-%20Casablanca!5e0!3m2!1sen!2sma!4v1784934127258!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
         </div>
 
         <div class="footer-col">
